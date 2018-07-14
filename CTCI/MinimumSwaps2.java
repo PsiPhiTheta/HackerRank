@@ -9,7 +9,7 @@ public class Solution {
         int size = arr.length;
 
         int [] sorted = arr.clone();
-        Arrays.sort(sorted); //maybe inneficient, sorting is n log(n) - merge sort (use quick sort for outliers), missing test cases 9 to 13
+        Arrays.sort(sorted); //not too eficient, sorting is n log(n) - merge sort (use quick sort for outliers), missing test cases 9 to 13
 
         ArrayList<Integer> list = new ArrayList<Integer>();
         for (int i : arr) list.add(i);
@@ -60,3 +60,5 @@ public class Solution {
         scanner.close();
     }
 }
+
+//note there are errors in the problem, the array doesn't need sorting as it is consecutive (even if test case 3 is not)
