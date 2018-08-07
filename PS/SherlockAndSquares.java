@@ -8,12 +8,15 @@ public class Solution {
     
     static int squares(int a, int b) {
         int count = 0;
-        for (int i = a; i<b+1; i++){
-            Double double_root = Math.sqrt(i);
-            int int_root = double_root.intValue();
-            if (int_root == Math.sqrt(i)){
+        double root_a = Math.sqrt(a);
+        int root_a_int = (int)root_a;
+        int root_a_int_sq = root_a_int * root_a_int;
+        while (root_a_int_sq <= b) {
+            if (root_a_int_sq >= a) {
                 count++;
             }
+            root_a_int++;
+            root_a_int_sq = root_a_int * root_a_int;
         }
         return count;  
     }
