@@ -8,15 +8,25 @@ import java.util.regex.*;
 
 public class Solution {
 
-    static int[] serviceLane(int n, int[][] cases) {
-        int[] result = {1, 2, 3, 2, 1};
-        int[] widths = {2, 3, 1, 2, 3, 2, 3, 3};
+    static int[] serviceLane(int t, int n, int[][] cases, int[] width) {
+        int[] max_length = new int[t];
+        Arrays.fill(max_length, 3); //initial max length is 3 
         
-        for (int i = 0; i < n; i++) {
-            widths[i] = cases[i][1];
+        for (int casenum = 0; casenum < t; casenum++) {
+            int i = cases[casenum][0];
+            int j = cases[casenum][1];
+            
+            while (i <= j)
+            {
+                if (max_length[casenum] > width[i])
+                {
+                    max_length[casenum] = width[i];
+                }
+                i++;
+            }
         }
         
-        return widths;
+        return max_length;
     }
 
     private static final Scanner scanner = new Scanner(System.in);
@@ -52,7 +62,7 @@ public class Solution {
             }
         }
 
-        int[] result = serviceLane(n, cases);
+        int[] result = serviceLane(t, n, cases, width);
 
         for (int i = 0; i < result.length; i++) {
             bufferedWriter.write(String.valueOf(result[i]));
