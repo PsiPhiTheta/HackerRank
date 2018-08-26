@@ -7,9 +7,7 @@ import java.util.regex.*;
 public class Solution {
 
     static int pageCount(int n, int p) {
-        int result = Math.min(p/2, n/2-p/2);
-
-        return result;
+        return Math.min(p/2, n/2-p/2);
     }
 
     private static final Scanner scanner = new Scanner(System.in);
