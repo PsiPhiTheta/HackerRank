@@ -9,7 +9,7 @@ public class Solution {
         Arrays.sort(ar);
         int total_pairs = 0;
         
-        for (int i = 0; i<n-1; i++) {
+        for (int i = 0; i<(n-1); i++) {
             if (ar[i] == ar[i+1]) {
                 i++;
                 total_pairs++;
