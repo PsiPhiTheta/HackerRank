@@ -12,7 +12,6 @@ import static java.util.stream.Collectors.toList;
 
 public class Solution {
 
-    // Complete the bonAppetit function below.
     static void bonAppetit(List<Integer> bill, int k, int b) {
         int b_charged = 0;
         int b_actual = 0;
@@ -21,7 +20,6 @@ public class Solution {
         
         b_charged = b;
         
-        //calculate here
         for(int i = 0; i < bill.size(); i++) {
             total += bill.get(i);
         }
