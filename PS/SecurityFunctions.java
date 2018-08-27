@@ -6,7 +6,6 @@ import java.util.*;
 
 public class Solution {
 
-    // Complete the calculate function below.
     static int calculate(int x) {
         int xr = x%11;
         return xr;
