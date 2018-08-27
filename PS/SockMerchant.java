@@ -5,8 +5,7 @@ import java.text.*;
 import java.util.*;
 
 public class Solution {
-
-    // Complete the sockMerchant function below.
+    
     static int sockMerchant(int n, int[] ar) {
         Arrays.sort(ar);
         int total_pairs = 0;
