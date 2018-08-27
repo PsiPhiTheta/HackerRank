@@ -6,7 +6,6 @@ import java.util.*;
 
 public class Solution {
 
-    // Complete the reverseArray function below.
     static int[] reverseArray(int[] a) 
     {
         int[] b = new int[a.length];
