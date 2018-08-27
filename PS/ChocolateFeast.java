@@ -6,7 +6,6 @@ import java.util.*;
 
 public class Solution {
 
-    // Complete the chocolateFeast function below.
     static int chocolateFeast(int n, int c, int m) {
         int new_choc = 0;
         int total_choc = 0;
