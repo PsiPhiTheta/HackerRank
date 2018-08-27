@@ -15,6 +15,7 @@ public class Solution {
                 apples_fallen++;
             }
         }
+        
         for (int i = 0; i < oranges.length; i++){
             if (oranges[i]+b <= t && oranges[i]+b >= s) {
                 oranges_fallen++;
