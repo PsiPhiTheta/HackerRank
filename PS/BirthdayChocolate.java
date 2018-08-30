@@ -9,10 +9,10 @@ import static java.util.stream.Collectors.toList;
 
 public class Solution {
 
-    // Complete the birthday function below.
     static int birthday(List<Integer> s, int d, int m) {
         int[] temp = new int[m];
         int total = 0;
+        
         for (int i = 0; i<(s.size()-(m-1)); i++) {
             for (int j = 0; j<temp.length; j++) {
                 temp[j] = s.get(i+j);
@@ -21,6 +21,7 @@ public class Solution {
                 total++;
             }
         }
+        
         return total;
     }
 
