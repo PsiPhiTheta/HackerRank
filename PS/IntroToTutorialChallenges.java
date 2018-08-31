@@ -7,8 +7,6 @@ import java.util.concurrent.*;
 import java.util.regex.*;
 
 public class Solution {
-
-    // Complete the introTutorial function below.
     static int introTutorial(int V, int[] arr) {
         int index = 0;
         for (int i = 0; i<arr.length; i++) {
