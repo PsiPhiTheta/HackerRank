@@ -7,8 +7,6 @@ import java.util.concurrent.*;
 import java.util.regex.*;
 
 public class Solution {
-
-    // Complete the insertionSort1 function below.
     static void insertionSort1(int n, int[] arr) {
         int temp = arr[n-1];
         for (int i = n-1; i>=0; i--) {
