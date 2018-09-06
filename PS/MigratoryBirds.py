@@ -1,12 +1,9 @@
-#!/bin/python3
-
 import math
 import os
 import random
 import re
 import sys
 
-# Complete the migratoryBirds function below.
 def migratoryBirds(arr):
     count = [0, 0, 0, 0, 0]
     
