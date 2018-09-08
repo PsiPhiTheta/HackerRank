@@ -1,12 +1,5 @@
-#!/bin/python3
-
-import math
 import os
-import random
-import re
-import sys
 
-# Complete the fibonacciModified function below.
 def fibonacciModified(t1, t2, n):
     arr = [0 for i in range(n)]
     arr[0] = t1
