@@ -1,12 +1,9 @@
-#!/bin/python3
-
 import math
 import os
 import random
 import re
 import sys
 
-# Complete the camelcase function below.
 def camelcase(s):
     out = 1
     for char in s:
