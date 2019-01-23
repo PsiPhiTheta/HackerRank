@@ -1,12 +1,9 @@
-#!/bin/python3
-
 import math
 import os
 import random
 import re
 import sys
 
-# Complete the repeatedString function below.
 def repeatedString(s, n):
     count1 = s.count("a")
     count2 = s[0:(n%len(s))].count("a")
