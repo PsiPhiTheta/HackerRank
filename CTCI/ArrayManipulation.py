@@ -6,21 +6,29 @@ import random
 import re
 import sys
 
-# Naive approach
-def arrayManipulation(n, queries): 
-    
-    array = [0]*n
-
-    print(array)
-    print(queries)
+# Complete the arrayManipulation function below.
+def arrayManipulation(n, queries): # O(N) solution
+    arr = [0]*(n+1)
+    ans = 0
 
     for i in range(len(queries)):
-        for j in range(queries[i][1]-queries[i][0]+1):
-            array[queries[i][0]+j-1] += queries[i][2]
+        a = queries[i][0]
+        b = queries[i][1]
+        k = queries[i][2]
+        arr[a] += k
+        if (b+1 <= n):
+            arr[b+1] -= k
 
-    print(array)
+    print(arr)
 
-    return max(array)
+    count = 0
+    
+    for i in range(n+1):
+        count += arr[i]
+        if count > ans:
+            ans = count
+        
+    return ans
 
 if __name__ == '__main__':
     fptr = open(os.environ['OUTPUT_PATH'], 'w')
