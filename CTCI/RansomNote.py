@@ -1,12 +1,9 @@
-#!/bin/python3
-
 import math
 import os
 import random
 import re
 import sys
 
-# Complete the checkMagazine function below.
 def checkMagazine(magazine, note):
     magazine.sort()
     note.sort()
