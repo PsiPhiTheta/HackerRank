@@ -10,20 +10,20 @@ import sys
 def freqQuery(queries):
     datadict = {}
     out = []
-    for i in range(len(queries)):       
-        if (queries[i][0]==1):
-            if (queries[i][1] in datadict):
-                datadict[queries[i][1]] += 1
+    for query in queries:       
+        if (query[0]==1):
+            if (query[1] in datadict):
+                datadict[query[1]] += 1
             else:
-                datadict[queries[i][1]] = 1
+                datadict[query[1]] = 1
 
-        elif (queries[i][0]==2):
-            if (queries[i][1] in datadict):
-                if (datadict[queries[i][1]] != 0):
-                    datadict[queries[i][1]] -= 1
+        elif (query[0]==2):
+            if (query[1] in datadict):
+                if (datadict[query[1]] != 0):
+                    datadict[query[1]] -= 1
 
         else:
-            if (queries[i][1] in datadict.values()):
+            if (query[1] in datadict.values()):
                 out.append("1")
             else:
                 out.append("0")
