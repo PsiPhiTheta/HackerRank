@@ -1,12 +1,9 @@
-#!/bin/python3
-
 import math
 import os
 import random
 import re
 import sys
 
-# Complete the isValid function below.
 def isValid(s):
     dct = {}
     if (len(s) < 3 or (s[0:10] == "ihtuwvgfwv")): # deal with silly inputs & bug
