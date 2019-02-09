@@ -1,12 +1,9 @@
-#!/bin/python3
-
 import math
 import os
 import random
 import re
 import sys
 
-# Complete the sherlockAndAnagrams function below.
 def sherlockAndAnagrams(s):
     dct = {} 
     cnt = 0
