@@ -1,12 +1,9 @@
-#!/bin/python3
-
 import math
 import os
 import random
 import re
 import sys
 
-# Complete the countTriplets function below.
 def countTriplets(arr, r):
     if (len(arr) < 3): # deal with silly inputs
         return 0
