@@ -1,12 +1,9 @@
-#!/bin/python3
-
 import math
 import os
 import random
 import re
 import sys
 
-# Complete the alternatingCharacters function below.
 def alternatingCharacters(s):
     cnt = 0
     if (s[:1] == "A"):
